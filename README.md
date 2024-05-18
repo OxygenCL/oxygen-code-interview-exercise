@@ -1,4 +1,4 @@
-# Prueba Técnica para Desarrollador PHP en Laravel
+# Prueba Técnica para Desarrollador PHP en Laravel 11
 
 ## Introducción
 
@@ -19,7 +19,7 @@ Crear una aplicación web sencilla de gestión de tareas. La aplicación debe pe
 
 1. Haz fork de este repositorio.
 
-2. Configura tu base de datos en el archivo `.env`. Puedes usar MySQL, SQLite, PostgreSQL, etc.
+2. Configura tu base de datos en el archivo `.env`. Puedes usar MySQL, SQLite, PostgreSQL, etc. Idealmente, SQLite.
 
 ### 2. Autenticación
 
@@ -57,17 +57,15 @@ Crear una aplicación web sencilla de gestión de tareas. La aplicación debe pe
 
 ### 6. Validación y Seguridad
 
-1. Asegúrate de validar los datos en los métodos `store` y `update` del controlador:
-    ```php
-        'title' => 'required|string|max:255',
-        'description' => 'required|string',
-    ```
+1. Asegúrate de validar los datos en los métodos `store` y `update` del controlador. Tal que:
+    - El título es un string, requerido y tiene un largo máximo de 255 caracteres.
+    - La descripción es un string y requerido.
 
 2. Protege las rutas y controladores para asegurarte de que los usuarios solo puedan ver y modificar sus propias tareas.
 
 ## Entrega
 
-1. Actualiza tu fork (puede ser privado) y comparte el enlace con nosotros.
+1. Actualiza tu fork y comparte el enlace con nosotros.
 2. Proporciona instrucciones claras sobre cómo configurar y ejecutar el proyecto.
 
 ### Notas Adicionales
